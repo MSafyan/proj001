@@ -1,18 +1,11 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
-import Switch from 'react-switch';
-
-const Main = ({
-	collapsed,
-	image,
-	handleCollapsedChange,
-	handleImageChange,
-}) => {
-	const intl = useIntl();
+import TableContent from './components/TableContent';
+const Main = () => {
 	return (
 		<main>
 			<div className='block'>
-				<span> {intl.formatMessage({ id: 'slushPage' })}</span>
+				<TableContent />
 			</div>
 		</main>
 	);
